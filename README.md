@@ -1,11 +1,50 @@
 
-# Mandiri Foods
+# XsisMovieService
 
-Sample project for mandiri technical task.
+Xsis prerequisite project with basic .NET 7 WebApi Service
 
 
+## Features
 
-## Architecture
-![App Screenshot](https://i.imgur.com/YMU5D0H.png)
+- (requirement) Movie CRUD
+- (requirement) Request Validation with FluentValidation
+- (requirement) Unit Test
+- (requirement) Global Error Handling
+- EF code first migration
+- JWT authorization
+- Paging with meta-data
 
-Consist of 3 main services (Catalog, Transaction, and UserManagement), each handles their own responsibilities as the name suggest. And fourth service built with .NET minimal API, handling any third party API that is being used, as of the time of writing only one third party service is used, that is Spoonacular.
+
+## Environment Variables
+
+To run this project, you will need to adjust the following environment variables (appsetting.json) according to your local
+
+`ConnectionStrings:DefaultConnection`
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/grammade/Agit-TasksService.git
+```
+
+
+Required Depedencies
+
+- .NET 7 Runtime
+- MS SQL
+
+Run migration
+```bash
+  //navigate to project dir
+  dotnet ef database update
+```
+
+Start the server
+```bash
+  dotnet build
+  dotnet run
+```
+
