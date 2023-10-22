@@ -73,7 +73,7 @@ public class MoviesController : ControllerBase {
     [HttpPatch("{id}")]
     [Authorize]
     public async Task<ActionResult<Movie>> update([FromRoute]int id, [FromBody] JsonPatchDocument<MovieModifyDto> patch) {
-        var db = await _context.Movies.FirstOrDefaultAsync(m => m.Id.Equals(id));
+        var db = await _context.Movies.AsNoTracking().FirstOrDefaultAsync(m => m.Id.Equals(id));
         if (db is null) return BadRequest();
         var dbMapped = _mapper.Map<MovieModifyDto>(db);
 
