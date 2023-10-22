@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XsisMovie", "XsisMovie.csproj", "{E45AC612-E06B-405B-89E7-78C62227202C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XsisMovie.Test", "..\XsisMovie.Test\XsisMovie.Test.csproj", "{1901A50B-6020-4A0C-9C03-62CF29E91DDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E45AC612-E06B-405B-89E7-78C62227202C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E45AC612-E06B-405B-89E7-78C62227202C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E45AC612-E06B-405B-89E7-78C62227202C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E45AC612-E06B-405B-89E7-78C62227202C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1901A50B-6020-4A0C-9C03-62CF29E91DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1901A50B-6020-4A0C-9C03-62CF29E91DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1901A50B-6020-4A0C-9C03-62CF29E91DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1901A50B-6020-4A0C-9C03-62CF29E91DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F60E7BCC-736E-476A-826E-6F2A528393F6}
+	EndGlobalSection
+EndGlobal
