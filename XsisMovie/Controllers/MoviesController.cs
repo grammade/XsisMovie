@@ -30,6 +30,10 @@ public class MoviesController : ControllerBase {
         _mapper = mapper;
         _pageHelper = pageHelper;
     }
+    [HttpPost("Exception")]
+    public async Task<ActionResult> testException() {
+        throw new NotImplementedException();
+    }
 
     [HttpGet]
     public async Task<ActionResult<Envelope<MovieDto>>> getMovies(
